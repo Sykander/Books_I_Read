@@ -1,0 +1,13 @@
+.Books {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 101;
+}
+
+.row {
+  padding: 10px;
+}
