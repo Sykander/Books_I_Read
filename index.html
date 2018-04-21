@@ -4,13 +4,11 @@
     <meta charset="utf-8">
     <title>Books</title>
     <!--Bootstrap local version-->
-    <!-- <link rel="stylesheet" href="./profile/bootstrap-3.3.7-dist/css/bootstrap.css"> -->
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
@@ -22,41 +20,52 @@
   <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse navbar-expand-lg">
       <div class="container-fluid">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#top">Home</a></li>
-          <li><a href="#Wheel-Of-Time">The Wheel of Time</a></li>
-          <li><a href="#Berserk">Berserk</a></li>
-          <li><a href="#Seer-And-The-Sword">The Seer and the Sword</a></li>
-          <li><a href="#Mortal-Engines">Mortal Engines</a></li>
-          <li><a href="#Night-Watch">The Night Watch</a></li>
-          <li><a href="#Across-the-Nightingale-Floor">Across the Nightingale Floor</a></li>
-        </ul>
+        <!--Navbar display when collapsed-->
+        <div class="navbar-md-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#index-navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!--Navbar display when expaded-->
+        <div class="collapse navbar-collapse" id="index-navbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#Wheel-Of-Time">The Wheel of Time</a></li>
+            <li><a href="#Berserk">Berserk</a></li>
+            <li><a href="#Seer-And-The-Sword">The Seer and the Sword</a></li>
+            <li><a href="#Mortal-Engines">Mortal Engines</a></li>
+            <li><a href="#Night-Watch">The Night Watch</a></li>
+            <li><a href="#Across-the-Nightingale-Floor">Across the Nightingale Floor</a></li>
+            <li></li>
+          </ul>
+        </div>
       </div>
     </nav>
     <br>
     <br>
-    <br>
-    <br>
     <!--container -->
     <div class="container Books">
-      <div class="Wheel-Of-Time" id='Wheel-Of-Time'>
-        <div class="row">
-          <div class="col-md-5">
+      <div class="Wheel-Of-Time book-profile" id='Wheel-Of-Time'>
+        <div class="row odd-row">
+          <div class="col-md-7 col-md-push-5">
+            <h1>The Wheel of Time</h1>
+            <p>The Wheel of Time is a fantasy series written James Oliver Rigby under the pen-name Robert Jordan, he began writing it in 1984 and was left unfinished when James died in 2007.</p>
+            <p>He entrusted the upcoming writer Brandon Sanderson with his notes to finish the series after his death. </p>
+            <p>The story follows many characters across various continents and cultures, it creates a realistic and human world with elements of magic and mythology. Overall, I enjoyed the series for the nuance and foreshadowing of the story as well as some of the thrilling moments.</p>
+            <p>HBO is currently working on a tv adaption of The Wheel of Time to fill the viewing gap after they're done with Game of Thrones.</p>
+            <p>If you enjoy books like Game of Thrones or Lord of the Rings then The Wheel of Time is a must read, for it's immersive world and gripping plotlines. The character progression is also amazing with both main and side characters developing and progressing as human beings within their normal lives.</p>
+          </div>
+          <div class="col-md-5 col-md-pull-7">
             <img class="img-responsive" src="images/Wheel-Of-Time.jpg" alt="The Wheel of Time book cover" >
           </div>
-          <div class="col-md-7">
-              <h1>The Wheel of Time</h1>
-              <p>The Wheel of Time is a fantasy series written James Oliver Rigby under the pen-name Robert Jordan, he began writing it in 1984 and was left unfinished when James died in 2007.</p>
-              <p>He entrusted the upcoming writer Brandon Sanderson with his notes to finish the series after his death. </p>
-              <p>The story follows many characters across various continents and cultures, it creates a realistic and human world with elements of magic and mythology. Overall, I enjoyed the series for the nuance and foreshadowing of the story as well as some of the thrilling moments.</p>
-              <p>HBO is currently working on a tv adaption of The Wheel of Time to fill the viewing gap after they're done with Game of Thrones.</p>
-              <p>If you enjoy books like Game of Thrones or Lord of the Rings then The Wheel of Time is a must read, for it's immersive world and gripping plotlines. The character progression is also amazing with both main and side characters developing and progressing as human beings within their normal lives.</p>
-          </div>
         </div>
-        <div class='Berserk' id='Berserk'>
-          <div class="row">
+        <hr>
+        <div class='Berserk book-profile' id='Berserk'>
+          <div class="row even-row">
             <div class="col-md-7">
               <h1>Berserk</h1>
               <p>Berserk is a dark fantasy horror written by Kentaro Miura set in a medieval european-esque continent. He began drawing Berserk in 1988 and it is still being published to this day.</p>
@@ -69,21 +78,23 @@
             </div>
           </div>
         </div>
-        <div class="Seer-And-The-Sword" id='Seer-And-The-Sword'>
-            <div class="row">
-                <div class="col-md-5">
-                  <img class="img-responsive" src="images/Seer-and-the-Sword.jpg" alt="Seer-And-The-Sword" >
-                </div>
-                <div class="col-md-7">
-                  <h1>The Seer and the Sword</h1>
-                  <p>The Seer and the Sword is a fantasy adventure book written by Victoria Hanley.</p>
-                  <p>The story is split between the perspective of a young princess and an outsider young boy who both live in the same castle, the story of course progresses to them eventually meeting and working together to overcome the antagonist of the story.</p>
-                  <p>The storyline is fairly generic but the characterisation and writing style are very immersive and can keep you engaged very well.</p>
-                </div>
+        <hr>
+        <div class="Seer-And-The-Sword book-profile" id='Seer-And-The-Sword'>
+          <div class="row odd-row">
+            <div class="col-md-7 col-md-push-5">
+              <h1>The Seer and the Sword</h1>
+              <p>The Seer and the Sword is a fantasy adventure book written by Victoria Hanley.</p>
+              <p>The story is split between the perspective of a young princess and an outsider young boy who both live in the same castle, the story of course progresses to them eventually meeting and working together to overcome the antagonist of the story.</p>
+              <p>The storyline is fairly generic but the characterisation and writing style are very immersive and can keep you engaged very well.</p>
             </div>
+            <div class="col-md-5 col-md-pull-7">
+              <img class="img-responsive" src="images/Seer-and-the-Sword.jpg" alt="Seer-And-The-Sword" >
+            </div>
+          </div>
         </div>
-        <div class='Mortal-Engines' id='Mortal-Engines'>
-          <div class="row">
+        <hr>
+        <div class='Mortal-Engines book-profile' id='Mortal-Engines'>
+          <div class="row even-row">
             <div class="col-md-7">
               <h1>Mortal Engines</h1>
               <p>Mortal Engines was written by Philip Reeves in 2001.</p>
@@ -95,21 +106,23 @@
             </div>
           </div>
         </div>
-        <div class="The Night Watch" id='The Night Watch'>
-            <div class="row">
-                <div class="col-md-5">
-                  <img class="img-responsive" src="images/Night-Watch.jpg" alt="The Night Watch" >
-                </div>
-                <div class="col-md-7">
-                  <h1>The Night Watch</h1>
-                  <p>The Night Watch is a short book, now a series, written by Sergei Lukyanenko.</p>
-                  <p>It follows the life of a fairly young 'other', a being with mystic powers which ultimately don't help his life out in much of a way. As an other it's his responsibility to keep the Night Watch where he protects regular citizens from the dangers of others.</p>
-                  <p>The story blurs the lines between good and evil whilst also casually mocking the concept of an absolute good or an absolute evil, it's very gritty and somehow realistic with fantasy elements. The main character comes across as just a regular person a bit tired with a job they know they can't just leave.</p>
-                </div>
+        <hr>
+        <div class="The Night Watch book-profile" id='The Night Watch'>
+          <div class="row odd-row">
+            <div class="col-md-7 col-md-push-5">
+              <h1>The Night Watch</h1>
+              <p>The Night Watch is a short book, now a series, written by Sergei Lukyanenko.</p>
+              <p>It follows the life of a fairly young 'other', a being with mystic powers which ultimately don't help his life out in much of a way. As an other it's his responsibility to keep the Night Watch where he protects regular citizens from the dangers of others.</p>
+              <p>The story blurs the lines between good and evil whilst also casually mocking the concept of an absolute good or an absolute evil, it's very gritty and somehow realistic with fantasy elements. The main character comes across as just a regular person a bit tired with a job they know they can't just leave.</p>
             </div>
+            <div class="col-md-5 col-md-pull-7">
+              <img class="img-responsive" src="images/Night-Watch.jpg" alt="The Night Watch" >
+            </div>
+          </div>
         </div>
-        <div class='Across-the-Nightingale-Floor' id='Across-the-Nightingale-Floor'>
-          <div class="row">
+        <hr>
+        <div class='Across-the-Nightingale-Floor book-profile' id='Across-the-Nightingale-Floor'>
+          <div class="row even-row">
             <div class="col-md-7">
               <h1>Across the Nightingale Floor</h1>
               <p>Across the Nightingale Floor is the first in a four part series written by Lian Hearn in 2002.</p>

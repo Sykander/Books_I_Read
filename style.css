@@ -6,9 +6,19 @@
 .navbar {
   position: fixed;
   z-index: 101;
+  width: 100%;
 }
 
 .row {
   padding: 10px;
 }
-  
+
+.book-profile {
+  padding-top: 50px;
+}
+
+img {
+  padding-top: 50px;
+  max-height: 400px;
+  max-width: auto;
+}
