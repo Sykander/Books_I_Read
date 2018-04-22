@@ -14,11 +14,11 @@
 }
 
 .book-profile {
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
-img {
-  padding-top: 50px;
+.book-profile > div > div > img {
   max-height: 400px;
   max-width: auto;
+  border-radius: 20px;
 }
