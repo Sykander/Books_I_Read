@@ -20,7 +20,7 @@ Large Screen has a format like this for the grid
 
 Image | Title and Text
 ----------------------
-Image | Title and Text
+Title and Text | Image
 ----------------------
 Image | Title and Text
 ----------------------
